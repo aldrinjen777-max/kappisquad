@@ -1,0 +1,915 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kappi Squad Cafe</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf3;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #2b1b12;
+}
+
+.navbar-brand {
+    color: #d8a56d !important;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #d8a56d !important;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1442512595331-e89e73853f31');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #e7b77d;
+}
+
+.section-title {
+    color: #4b2e1e;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.btn-cafe {
+    background-color: #75472c;
+    color: white;
+    border: none;
+}
+
+.btn-cafe:hover {
+    background-color: #3b2418;
+    color: white;
+}
+
+.about-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.price {
+    color: #8b542f;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.offer {
+    background-color: #4b2e1e;
+    color: white;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.review {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #ddd;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+.contact {
+    background-color: #f1e5d5;
+    padding: 55px 20px;
+}
+
+footer {
+    background-color: #2b1b12;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer a {
+    color: #e7b77d;
+    text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="#home">
+☕ KAPPI SQUAD
+</a>
+
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse" data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#menu-section">Menu</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#offers">Offers</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#gallery">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#reservation">Reservation</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+
+<!-- HOME SECTION -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<h1>KAPPI SQUAD CAFE</h1>
+
+<h3>Good Coffee. Good Food. Good Vibes.</h3>
+
+<p class="mt-3">
+Your favourite place to relax, refresh and enjoy.
+</p>
+
+<a href="#menu-section" class="btn btn-cafe btn-lg mt-3">
+Explore Our Menu
+</a>
+
+<a href="#reservation" class="btn btn-outline-light btn-lg mt-3">
+Book a Table
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section class="container py-5" id="about">
+
+<h2 class="section-title">ABOUT OUR CAFE</h2>
+
+<div class="row align-items-center g-4">
+
+<div class="col-md-6">
+
+<img class="about-img"
+src="https://images.unsplash.com/photo-1554118811-1e0d58224f24"
+alt="Cafe interior">
+
+</div>
+
+<div class="col-md-6">
+
+<h3>Welcome to Kappi Squad Cafe!</h3>
+
+<p>
+Kappi Squad Cafe is a perfect destination for coffee lovers
+and food enthusiasts. We offer freshly brewed coffee,
+delicious snacks and mouth-watering desserts.
+</p>
+
+<p>
+Our cafe is designed to provide a comfortable atmosphere
+where friends and family can spend quality time together.
+</p>
+
+<p>
+Whether you want to enjoy your morning coffee, have a
+casual meeting or celebrate special moments, Kappi Squad
+Cafe is the perfect place.
+</p>
+
+<a href="#contact" class="btn btn-cafe">
+Know More
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="container py-5">
+
+<h2 class="section-title">WHY CHOOSE US?</h2>
+
+<div class="row text-center g-4">
+
+<div class="col-md-3">
+<i class="bi bi-cup-hot fs-1 text-warning"></i>
+<h5 class="mt-3">Fresh Coffee</h5>
+<p>Freshly prepared coffee every day.</p>
+</div>
+
+<div class="col-md-3">
+<i class="bi bi-egg-fried fs-1 text-warning"></i>
+<h5 class="mt-3">Quality Food</h5>
+<p>Delicious food made with care.</p>
+</div>
+
+<div class="col-md-3">
+<i class="bi bi-house-heart fs-1 text-warning"></i>
+<h5 class="mt-3">Cozy Atmosphere</h5>
+<p>A comfortable place to relax.</p>
+</div>
+
+<div class="col-md-3">
+<i class="bi bi-people fs-1 text-warning"></i>
+<h5 class="mt-3">Friendly Service</h5>
+<p>Enjoy a warm welcome every time.</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- SPECIAL OFFERS -->
+
+<section class="offer" id="offers">
+
+<h2> SPECIAL OFFERS </h2>
+
+<h3 class="mt-3">Buy 1 Coffee, Get 1 Coffee at 50% OFF!</h3>
+
+<p>Enjoy your favourite coffee with your friends.</p>
+
+<a href="#menu-section" class="btn btn-light mt-3">
+Order Now
+</a>
+
+</section>
+
+
+<!-- MENU SECTION -->
+
+<section class="container py-5" id="menu-section">
+
+<h2 class="section-title">OUR SPECIAL MENU</h2>
+
+<div class="row g-4">
+
+<!-- ITEM 1 -->
+
+<div class="col-md-4">
+<div class="card menu-card shadow">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Coffee">
+
+<div class="card-body text-center">
+
+<h5>Hot Coffee</h5>
+<p>Freshly brewed hot coffee.</p>
+<p class="price">₹80</p>
+
+<button class="btn btn-cafe"
+onclick="addCart('Hot Coffee',80)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- ITEM 2 -->
+
+<div class="col-md-4">
+<div class="card menu-card shadow">
+
+<img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735" alt="Cold Coffee">
+
+<div class="card-body text-center">
+
+<h5>Cold Coffee</h5>
+<p>Chilled creamy coffee.</p>
+<p class="price">₹120</p>
+
+<button class="btn btn-cafe"
+onclick="addCart('Cold Coffee',120)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- ITEM 3 -->
+
+<div class="col-md-4">
+<div class="card menu-card shadow">
+
+<img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699" alt="Milkshake">
+
+<div class="card-body text-center">
+
+<h5>Chocolate Milkshake</h5>
+<p>Rich chocolate milkshake.</p>
+<p class="price">₹130</p>
+
+<button class="btn btn-cafe"
+onclick="addCart('Chocolate Milkshake',130)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- ITEM 4 -->
+
+<div class="col-md-4">
+<div class="card menu-card shadow">
+
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
+
+<div class="card-body text-center">
+
+<h5>Cheese Burger</h5>
+<p>Fresh and cheesy burger.</p>
+<p class="price">₹150</p>
+
+<button class="btn btn-cafe"
+onclick="addCart('Cheese Burger',150)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- ITEM 5 -->
+
+<div class="col-md-4">
+<div class="card menu-card shadow">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza">
+
+<div class="card-body text-center">
+
+<h5>Cheese Pizza</h5>
+<p>Delicious cheese pizza.</p>
+<p class="price">₹199</p>
+
+<button class="btn btn-cafe"
+onclick="addCart('Cheese Pizza',199)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- ITEM 6 -->
+
+<div class="col-md-4">
+<div class="card menu-card shadow">
+
+<img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af" alt="Sandwich">
+
+<div class="card-body text-center">
+
+<h5>Club Sandwich</h5>
+<p>Fresh vegetable sandwich.</p>
+<p class="price">₹110</p>
+
+<button class="btn btn-cafe"
+onclick="addCart('Club Sandwich',110)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- ITEM 7 -->
+
+<div class="col-md-4">
+<div class="card menu-card shadow">
+
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Cake">
+
+<div class="card-body text-center">
+
+<h5>Chocolate Cake</h5>
+<p>Soft and tasty chocolate cake.</p>
+<p class="price">₹90</p>
+
+<button class="btn btn-cafe"
+onclick="addCart('Chocolate Cake',90)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- ITEM 8 -->
+
+<div class="col-md-4">
+<div class="card menu-card shadow">
+
+<img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187" alt="Dessert">
+
+<div class="card-body text-center">
+
+<h5>Special Dessert</h5>
+<p>Our delicious cafe dessert.</p>
+<p class="price">₹140</p>
+
+<button class="btn btn-cafe"
+onclick="addCart('Special Dessert',140)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- ITEM 9 -->
+
+<div class="col-md-4">
+<div class="card menu-card shadow">
+
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="Bakery">
+
+<div class="card-body text-center">
+
+<h5>Fresh Bakery</h5>
+<p>Freshly baked bakery item.</p>
+<p class="price">₹70</p>
+
+<button class="btn btn-cafe"
+onclick="addCart('Fresh Bakery',70)">
+Add to Cart
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- SHOPPING CART -->
+
+<section class="container py-5">
+
+<h2 class="section-title">YOUR CART</h2>
+
+<div class="card shadow p-4">
+
+<div id="cartItems">
+<p>Your cart is empty.</p>
+</div>
+
+<hr>
+
+<h5>Total Items: <span id="count">0</span></h5>
+
+<h5>Total Amount: ₹<span id="total">0</span></h5>
+
+<button class="btn btn-cafe mt-3"
+onclick="checkout()">
+Place Order
+</button>
+
+<button class="btn btn-outline-danger mt-2"
+onclick="clearCart()">
+Clear Cart
+</button>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="container py-5" id="gallery">
+
+<h2 class="section-title">OUR CAFE GALLERY</h2>
+
+<div class="row g-3 gallery">
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0" alt="Cafe">
+</div>
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee">
+</div>
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb" alt="Cafe seating">
+</div>
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Restaurant">
+</div>
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Coffee cup">
+</div>
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8" alt="Cafe interior">
+</div>
+
+</div>
+</section>
+
+
+<!-- CUSTOMER REVIEWS -->
+
+<section class="container py-5">
+
+<h2 class="section-title">CUSTOMER REVIEWS</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="review text-center">
+
+<h5>Rahul</h5>
+<p class="text-warning">★★★★★</p>
+
+<p>"Amazing coffee and delicious food.
+A perfect place to hang out."</p>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="review text-center">
+
+<h5>Arun</h5>
+<p class="text-warning">★★★★★</p>
+
+<p>"Friendly service and beautiful atmosphere.
+Loved the experience."</p>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="review text-center">
+
+<h5>Kevin</h5>
+<p class="text-warning">★★★★★</p>
+
+<p>"One of my favourite places for coffee
+and snacks."</p>
+
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- RESERVATION -->
+
+<section class="container py-5" id="reservation">
+
+<h2 class="section-title">BOOK YOUR TABLE</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-md-7">
+
+<div class="card shadow p-4">
+
+<form onsubmit="reserve(event)">
+
+<div class="mb-3">
+<label class="form-label">Your Name</label>
+<input type="text" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Phone Number</label>
+<input type="tel" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Date</label>
+<input type="date" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Number of Guests</label>
+<select class="form-select" required>
+<option value="">Select Guests</option>
+<option>1 Person</option>
+<option>2 People</option>
+<option>3 People</option>
+<option>4 People</option>
+<option>5+ People</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Special Request</label>
+<textarea class="form-control" rows="3"></textarea>
+</div>
+
+<button class="btn btn-cafe w-100" type="submit">
+Reserve Now
+</button>
+
+</form>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<h2 class="section-title">CONTACT US</h2>
+
+<div class="row text-center g-4">
+
+<div class="col-md-4">
+
+<i class="bi bi-geo-alt fs-1"></i>
+
+<h5>Our Location</h5>
+
+<p>Edakkara, Kerala, India</p>
+
+</div>
+
+<div class="col-md-4">
+
+<i class="bi bi-telephone fs-1"></i>
+
+<h5>Phone Number</h5>
+
+<p>+91 9876543210</p>
+
+</div>
+
+<div class="col-md-4">
+
+<i class="bi bi-envelope fs-1"></i>
+
+<h5>Email Address</h5>
+
+<p>kappisquad@gmail.com</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="text-center mt-4">
+
+<h5>Opening Hours</h5>
+
+<p>Monday - Sunday</p>
+
+<p>9:00 AM - 10:00 PM</p>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="text-center">
+
+<h3>KAPPI SQUAD CAFE ☕</h3>
+
+<p>Good Coffee. Good Food. Good Vibes.</p>
+
+<div class="mb-3">
+
+<a href="#home">Home</a> |
+<a href="#about">About</a> |
+<a href="#menu-section">Menu</a> |
+<a href="#contact">Contact</a>
+
+</div>
+
+<p>
+<i class="bi bi-instagram"></i>
+<i class="bi bi-facebook"></i>
+<i class="bi bi-whatsapp"></i>
+</p>
+
+<p>© 2026 Kappi Squad Cafe. All Rights Reserved.</p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+let count = 0;
+let total = 0;
+let cart = [];
+
+function addCart(name, price) {
+
+    cart.push({name: name, price: price});
+
+    count++;
+    total += price;
+
+    updateCart();
+
+    alert(name + " added to your cart!");
+}
+
+function updateCart() {
+
+    document.getElementById("count").innerText = count;
+
+    document.getElementById("total").innerText = total;
+
+    let output = "";
+
+    cart.forEach(function(item, index) {
+
+        output += `
+        <div class="d-flex justify-content-between mb-2">
+            <span>${item.name} - ₹${item.price}</span>
+            <button class="btn btn-sm btn-danger"
+            onclick="removeItem(${index})">Remove</button>
+        </div>
+        `;
+
+    });
+
+    document.getElementById("cartItems").innerHTML =
+    output || "<p>Your cart is empty.</p>";
+
+}
+
+function removeItem(index) {
+
+    total -= cart[index].price;
+    count--;
+
+    cart.splice(index, 1);
+
+    updateCart();
+
+}
+
+function clearCart() {
+
+    cart = [];
+    count = 0;
+    total = 0;
+
+    updateCart();
+
+}
+
+function checkout() {
+
+    if(cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    alert("Order placed successfully! Thank you for choosing Kappi Squad Cafe.");
+
+    clearCart();
+
+}
+
+function reserve(event) {
+
+    event.preventDefault();
+
+    alert("Thank you! Your table reservation request has been received.");
+
+    event.target.reset();
+
+}
+
+</script>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
